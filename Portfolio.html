@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <title>Portfolio</title>
+</head>
+<body>
+
+<header>
+  <div class="hover-underline"><a class="name">Ahmed Mohamed</a></div>
+  <nav class="nav-bar">
+    <div class="holographic-container">
+      <div class="holographic-card"><a href="#home">Home</a></div>
+      <div class="holographic-card"><a href="#skills">Skills</a></div>
+      <div class="holographic-card"><a href="#project">Projects</a></div>
+    </div> 
+  </nav>
+</header>
+
+<section class="home-screen" id="home">
+  <h1>Hello, I'm <span>Ahmed</span></h1>
+  <h2>A Passionate <span id="typing"></span></h2>
+  <button id="view-work" onclick="document.getElementById('skills').scrollIntoView({behavior:'smooth'})">
+    <i class="fas fa-arrow-down"></i> View my work
+  </button>
+</section>
+
+<section id="skills" class="skills">
+  <h2>Skills</h2>
+  <div class="skills-container">
+    <div class="gradient-border-wrapper">
+      <div class="skill-card">
+        <i class="fas fa-code"></i>
+        <h3>Web Development</h3>
+        <p>Create and develop websites using HTML, CSS, and JavaScript</p>
+      </div>
+    </div>
+    <div class="gradient-border-wrapper">
+      <div class="skill-card">
+        <i class="fas fa-robot"></i>
+        <h3>Chatbot Development</h3>
+        <p>Design and develop chatbots with Python and AI APIs</p>
+      </div>
+    </div>
+    <div class="gradient-border-wrapper">
+      <div class="skill-card">
+        <i class="fas fa-gamepad"></i>
+        <h3>2D Game Development</h3>
+        <p>Build interactive 2D games with engines like Unity & Pygame</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="project" class="projects">
+  <h2>Projects</h2>
+  <div class="projects-container">
+    <div class="gradient-border-wrapper">
+      <div class="project-card">
+        <img src="/Egypt/pictures/attractions.img/Pyramid.jpg">
+        <div class="project-info">
+          <p>Explore Egypt's wonders and culture</p>
+          <div class="project-details">
+            <span>Egypt culture</span>
+            <a href="/Egypt/index.html" class="project-btn">MORE DETAILS</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="gradient-border-wrapper">
+      <div class="project-card">
+        <img src="/tour guide/virtual-tour-img.jpg">
+        <div class="project-info">
+          <p>Explore Egypt with a virtual Tour Guide</p>
+          <div class="project-details">
+            <span>Tour Guide</span>
+            <a href="/tour guide/index.html" class="project-btn">MORE DETAILS</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="gradient-border-wrapper">
+      <div class="project-card">
+        <img src="/Form/plane-bookingform-img.jpeg">
+        <div class="project-info">
+          <p>Book your flight to Egypt</p>
+          <div class="project-details">
+            <span>Booking Form</span>
+            <a href="/Form/index.html" class="project-btn">MORE DETAILS</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<button id="floating-top" title="Back to top">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<footer>
+  <p>© 2025 Ahmed Mohamed</p>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+AOS.init({ once: true, duration: 1000 });
+
+const topButton = document.getElementById("floating-top");
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 400) topButton.classList.add("show");
+  else topButton.classList.remove("show");
+});
+topButton.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+const typingText = "Software Developer";
+let i = 0;
+function typingEffect() {
+  if (i < typingText.length) {
+    document.getElementById("typing").innerHTML += typingText.charAt(i);
+    i++;
+    setTimeout(typingEffect, 150);
+  }
+}
+typingEffect();
+</script>
+</body>
+</html>

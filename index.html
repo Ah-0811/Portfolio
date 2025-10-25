@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plan Your Trip to Egypt</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Plan Your Trip to Egypt</h2>
+    <p>Please fill in the details below to organize your journey.</p>
+
+
+    <fieldset>
+        <legend>Listen to traditional music while you plan</legend>
+        <audio controls>
+          <source src="../audioBG.mp3" type="audio/mpeg">
+        </audio>
+      </fieldset>
+
+    <form id="travelForm">
+
+      <fieldset>
+        <legend>Traveler Information</legend>
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email Address" required>
+        <input type="tel" placeholder="Phone Number">
+      </fieldset>
+
+      <fieldset>
+        <legend>Personal Details</legend>
+        <label><input type="radio" name="gender"> Male</label>
+        <label><input type="radio" name="gender"> Female</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Travel Dates</legend>
+        <label>Arriving Date</label>
+        <input type="date" required>
+
+        <label>Departure Date</label>
+        <input type="date" required>
+      </fieldset>
+
+      <fieldset>
+        <legend>Required Documents</legend>
+        <label>Profile Picture</label>
+        <input type="file">
+
+        <label>Passport</label>
+        <input type="file">
+
+        <label>Visa</label>
+        <input type="file">
+      </fieldset>
+
+      <fieldset>
+        <legend>Services Needed</legend>
+        <label><input type="checkbox"> Airline Tickets</label>
+        <label><input type="checkbox"> Rental Car</label>
+        <label><input type="checkbox"> Hotel Accommodations</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Mode of Travel</legend>
+        <label><input type="radio" name="travel"> Plane</label>
+        <label><input type="radio" name="travel"> Train</label>
+        <label><input type="radio" name="travel"> Bus</label>
+      </fieldset>
+       
+      <input type="submit" value="Submit" >
+    
+    </form>
+  </div>
+</body>
+</html>
