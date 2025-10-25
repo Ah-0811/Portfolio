@@ -1,89 +1,121 @@
-body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: url(egypt\ background.webp) center center fixed;
-    background-size: cover;
-    display:flex;
+ html, body {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
+  }
+  
+  .video-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .video-section video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  .video-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 30px;
-  }
-  
-  .form-container {
-    background: rgba(255, 255, 255, 0.95);
-    width: 100%;
-    max-width: 500px;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 6px 25px rgba(0,0,0,0.3);
-  }
-  
-  h2 {
     text-align: center;
-    color: #2c3e50;
-    margin-bottom: 5px;
+    padding: 0 20px;
   }
   
-  p {
-    text-align: center;
-    font-size: 14px;
-    color: #555;
+  .video-section .overlay h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .video-section .overlay p {
+    font-size: 1.2rem;
     margin-bottom: 20px;
   }
   
-  
-  form input,
-  form select,
-  form button {
-    width: 100%;
-    padding: 10px;
-    margin: 2;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 14px;
+  .video-section .overlay nav a {
+    margin: 0 15px;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3;
   }
   
-  form input[type="file"] {
-    border: none;
-    padding: 3px;
+  .video-section .overlay nav a:hover {
+    background: rgba(255, 255, 255, 0.6);
   }
   
-  .gender,
-  .services,
-  .travel {
-    margin: 10px 0;
-  }
-  
-  .gender label,
-  .services label,
-  .travel label {
-    display: block;
-    margin: 5px 0;
-  }
-  
-  input[type="submit"]{
-    background: #0077cc;
-    color: #fff;
-    font-size: 16px;
-    font-weight: bold;
-    border: none;
-  }
-   
-  input[type="submit"]:hover{
-    background: blue;
-  }
+  .info-section {
+    background-color: #fef8f2;
+    color: #333;
+    padding: 60px 30px;
+    max-width: 900px;
+    margin: 40px auto;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
 
-  fieldset {
-    border: 2px solid #0077cc;
-    border-radius: 8px;
-    padding: 15px;
-    margin: 15px 0;
-  }
-  
-  legend {
+.info-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+    color: #6b4f3b;
+}
+
+.info-section p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+
+  #Folder-linker nav {
+    background-color: #a67c52;
+    padding: 25px 0;
+    text-align: center;
+    border-top: 3px solid #6b4f3b;
+    border-radius: 15px;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+#Folder-linker .nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px; 
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+#Folder-linker .nav-list li a {
+    display: inline-block;
+    padding: 14px 28px;
+    background-color: #6b4f3b;
+    color: #fff;
     font-weight: bold;
-    color: #0077cc;
-    padding: 0 8px;
-  }
-  
-  
+    font-size: 1.1rem;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+#Folder-linker .nav-list li a:hover {
+    background-color: #8c6a50;
+}

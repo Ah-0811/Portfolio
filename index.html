@@ -3,75 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Plan Your Trip to Egypt</title>
+  <title>Egypt Tour Guide</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="form-container">
-    <h2>Plan Your Trip to Egypt</h2>
-    <p>Please fill in the details below to organize your journey.</p>
-
-
-    <fieldset>
-        <legend>Listen to traditional music while you plan</legend>
-        <audio controls>
-          <source src="../audioBG.mp3" type="audio/mpeg">
-        </audio>
-      </fieldset>
-
-    <form id="travelForm">
-
-      <fieldset>
-        <legend>Traveler Information</legend>
-        <input type="text" placeholder="Full Name" required>
-        <input type="email" placeholder="Email Address" required>
-        <input type="tel" placeholder="Phone Number">
-      </fieldset>
-
-      <fieldset>
-        <legend>Personal Details</legend>
-        <label><input type="radio" name="gender"> Male</label>
-        <label><input type="radio" name="gender"> Female</label>
-      </fieldset>
-
-      <fieldset>
-        <legend>Travel Dates</legend>
-        <label>Arriving Date</label>
-        <input type="date" required>
-
-        <label>Departure Date</label>
-        <input type="date" required>
-      </fieldset>
-
-      <fieldset>
-        <legend>Required Documents</legend>
-        <label>Profile Picture</label>
-        <input type="file">
-
-        <label>Passport</label>
-        <input type="file">
-
-        <label>Visa</label>
-        <input type="file">
-      </fieldset>
-
-      <fieldset>
-        <legend>Services Needed</legend>
-        <label><input type="checkbox"> Airline Tickets</label>
-        <label><input type="checkbox"> Rental Car</label>
-        <label><input type="checkbox"> Hotel Accommodations</label>
-      </fieldset>
-
-      <fieldset>
-        <legend>Mode of Travel</legend>
-        <label><input type="radio" name="travel"> Plane</label>
-        <label><input type="radio" name="travel"> Train</label>
-        <label><input type="radio" name="travel"> Bus</label>
-      </fieldset>
-       
-      <input type="submit" value="Submit" >
-    
-    </form>
+ <section class="video-section">
+  <video id="bgVideo" autoplay loop muted>
+    <source src="../pyramid video.mp4" type="video/mp4">
+  </video>
+    <div class="overlay">
+        <h1>Welcome to Egypt</h1>
+        <p>Discover the treasures of the Pharaohs, from Cairo to Sharm El Sheikh.</p>
+        <nav>
+          <a href="cairo.html">Cairo</a>
+          <a href="giza.html">Giza</a>
+          <a href="luxor.html">Luxor</a>
+          <a href="Sharm.html">Sharm El Sheikh</a>
+          <a href="alexandria.html">Alexandria</a>
+        </nav>
   </div>
+</section>
+
+  <audio  aria-valuemax="50%" autoplay loop>
+    <source src="../audioBG.mp3" type="audio/mp3">
+  </audio>
+
+  
+  <section class="info-section">
+    <h2>About Egypt</h2>
+    <p>Egypt is a land of ancient wonders and timeless beauty. From the Great Pyramids of Giza to the mighty Nile River, it is a country steeped in history and culture.</p>
+    <p>Explore bustling cities, serene deserts, and world-renowned archaeological sites that tell the story of one of the oldest civilizations in the world.</p>
+  
+    <hr>
+  
+    <h2>Must-See Attractions</h2>
+    <p><strong>The Great Pyramids of Giza:</strong> The last surviving wonder of the ancient world, an iconic symbol of Egypt’s history.</p>
+    <p><strong>The Nile River:</strong> Enjoy river cruises or felucca rides and witness the lifeblood of Egypt that has supported civilization for millennia.</p>
+    <p><strong>Luxor and Karnak Temples:</strong> Marvel at massive temples and tombs, home to pharaohs and ancient treasures.</p>
+    <p><strong>Alexandria:</strong> Explore the Mediterranean city with its historic library, fort, and scenic coastline.</p>
+  
+    <hr>
+  
+    <h2>Food and Cuisine</h2>
+    <p>Indulge in Egyptian delicacies such as koshari, falafel, mahshi (stuffed vegetables), and molokhia. Street food and local markets provide authentic tastes of traditional Egyptian cuisine.</p>
+  
+    <br> <hr>
+        <h2>More info</h2>
+        <p> Click on the following to help you plan your trip/ learn more about Egypt </p>
+        <div id="Folder-linker"> 
+            <nav>
+              <ul class="nav-list">
+                <li><a href="../Egypt/index.html">Egypt's Culture</a></li>
+                <li><a href="../Form/index.html">Booking Form</a></li>
+              </ul>
+            </nav>
+          </div>
+          
+</section>
+
 </body>
 </html>
